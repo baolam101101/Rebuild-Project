@@ -19,7 +19,5 @@ namespace Rebuild_Project.Models
         }
 
         public System.Data.Entity.DbSet<Rebuild_Project.Models.Post> Posts { get; set; }
-
-        public System.Data.Entity.DbSet<Rebuild_Project.Models.Category> Categories { get; set; }
     }
 }

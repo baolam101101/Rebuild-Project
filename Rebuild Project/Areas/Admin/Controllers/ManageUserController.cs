@@ -11,7 +11,7 @@ using Microsoft.AspNet.Identity.Owin;
 
 namespace Rebuild_Project.Areas.Admin.Controllers
 {
-    [Authorize(Users = "levi@gmail.com")]
+    [RouteArea("Admin")]
     public class ManageUserController : Controller
     {
         ApplicationDbContext context = new ApplicationDbContext();

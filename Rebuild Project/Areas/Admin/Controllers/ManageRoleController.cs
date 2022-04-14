@@ -8,6 +8,7 @@ using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace Rebuild_Project.Areas.Admin.Controllers
 {
+    [RouteArea("Admin")]
     public class ManageRoleController : Controller
     {
         ApplicationDbContext context = new ApplicationDbContext();

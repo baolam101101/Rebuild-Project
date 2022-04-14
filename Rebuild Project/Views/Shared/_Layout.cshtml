@@ -25,8 +25,8 @@
                     {
                         if (User.IsInRole("Admin"))
                         {
-                            <li>@Html.ActionLink("Manage Role", "Index", "ManageRole")</li>
-                            <li>@Html.ActionLink("Manage User", "Index", "ManageUser")</li>
+                            <li>@Html.ActionLink("Manage Role", "Index", "ManageRole", new { Area = "Admin" }, null)</li>
+                            <li>@Html.ActionLink("Manage User", "Index", "ManageUser", new { Area = "Admin" }, null)</li>
                         }
                     }
                     @if (User.Identity.IsAuthenticated)
@@ -36,6 +36,7 @@
                             <li>@Html.ActionLink("Posts", "Index", "Posts")</li>
                             <li>@Html.ActionLink("New Post", "Create", "Posts")</li>
                             <li>@Html.ActionLink("Categories", "Index", "Categories")</li>
+                            <li>@Html.ActionLink("Forum", "Index", "Submission")</li>
                         }
                     }
 

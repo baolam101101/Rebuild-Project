@@ -38,7 +38,7 @@ namespace Rebuild_Project.Models
         [Compare("NewPassword", ErrorMessage = "The new password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
     }
-
+        
     public class ChangePasswordViewModel
     {
         [Required]

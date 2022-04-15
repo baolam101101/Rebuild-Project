@@ -7,5 +7,6 @@ namespace Rebuild_Project.Models
 {
     public class Submission
     {
+
     }
 }

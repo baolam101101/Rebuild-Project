@@ -13,7 +13,7 @@ namespace Rebuild_Project
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-           /* routes.MapRoute(
+           /*routes.MapRoute(
                 name: "Admin",
                 url: "{area:exists}/{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }

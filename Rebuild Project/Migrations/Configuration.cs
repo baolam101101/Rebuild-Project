@@ -23,10 +23,10 @@ namespace Rebuild_Project.Migrations
         {
             if (!context.Users.Any())
             {
-                CreateUser(context, "admin@gmail.com", "1", "Administrator");
+                CreateUser(context, "admin@gmail.com", "1", "Admin");
 
-                CreateRole(context, "Administrators");
-                AddUserToRole(context, "admin@gmail.com", "Administrators");
+                CreateRole(context, "Admin");
+                AddUserToRole(context, "admin@gmail.com", "Admin");
                 CreateSeveralEvents(context);
             }
         }
@@ -54,15 +54,9 @@ namespace Rebuild_Project.Migrations
                 
             context.Events.Add(new Event()
             {
-                Title = "Few Upcoming Events",
+                Title = "Upcoming Events",
                 StartDateTime = DateTime.Now.Date.AddDays(5).AddHours(21).AddMinutes(30),
-                Author = context.Users.First(),
-            });
-
-            context.Events.Add(new Event()
-            {
-                Title = "Passed Events",
-                StartDateTime = DateTime.Now.Date.AddDays(5).AddHours(21).AddMinutes(30),
+                Duration = TimeSpan.FromHours(1.5),
                 Author = context.Users.First(),
             });
         }
